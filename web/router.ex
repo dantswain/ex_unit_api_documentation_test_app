@@ -20,7 +20,9 @@ defmodule ExUnitApiDocumentationTestApp.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", ExUnitApiDocumentationTestApp do
-  #   pipe_through :api
-  # end
+  scope "/api", ExUnitApiDocumentationTestApp do
+    pipe_through :api
+
+    get "/", ApiController, :index
+  end
 end
