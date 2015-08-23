@@ -25,4 +25,10 @@ defmodule ExUnitApiDocumentationTestApp.Router do
 
     get "/", ApiController, :index
   end
+
+  scope "/docs", ExUnitApiDocumentation do
+    pipe_through :browser
+
+    get "/", DocsController, :index
+  end
 end

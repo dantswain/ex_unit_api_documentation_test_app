@@ -31,7 +31,7 @@ defmodule ExUnitApiDocumentationTestApp.Mixfile do
     [{:phoenix, "~> 0.17"},
      {:phoenix_html, "~> 2.1"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
-     {:ex_unit_api_documentation, path: "../ex_unit_api_documentation", only: :test},
+     {:ex_unit_api_documentation, path: "../ex_unit_api_documentation"},
      {:cowboy, "~> 1.0"}]
   end
 end
