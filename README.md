@@ -1,19 +1,14 @@
 # ExUnitApiDocumentationTestApp
 
-To start your Phoenix app:
+This is a test/demo application for
+[ex_unit_api_documentation](http://github.com/dantswain/ex_unit_api_documentation).
 
-  1. Install dependencies with `mix deps.get`
-  2. Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  3. Start Phoenix endpoint with `mix phoenix.server`
+To run this application, clone this repository and then
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+    mix deps.get
+    mix deps.compile
+    mix test
+    mix phoenix.server
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: http://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+Then you should be able to navigate your browser to
+http://localhost:4000/docs and see the test output.
