@@ -17,7 +17,7 @@ defmodule ExUnitApiDocumentationTestApp.Mixfile do
   # Type `mix help compile.app` for more information
   def application do
     [mod: {ExUnitApiDocumentationTestApp, []},
-     applications: [:phoenix, :phoenix_html, :cowboy, :logger]]
+     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :ex_unit_api_documentation]]
   end
 
   # Specifies which paths to compile per environment

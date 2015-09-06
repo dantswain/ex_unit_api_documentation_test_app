@@ -26,8 +26,15 @@ defmodule ExUnitApiDocumentationTestApp.Router do
     get "/", ApiController, :index
   end
 
+  pipeline :docs do
+    plug Plug.Static,
+      at: "/", from: :ex_unit_api_documentation, gzip: false,
+      only: ~w(css fonts images js favicon.ico robots.txt)
+  end
+
   scope "/docs", ExUnitApiDocumentation do
     pipe_through :browser
+    pipe_through :docs
 
     get "/", DocsController, :index
   end
