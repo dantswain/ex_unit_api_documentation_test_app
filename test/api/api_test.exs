@@ -19,4 +19,9 @@ defmodule ExUnitApiDocumentationTestApp.ApiTest do
     got = API.get!("/")
     assert got.status_code == 200
   end
+
+  test "GET /foo" do
+    got = API.get!("/foo")
+    assert got.status_code == 404
+  end
 end

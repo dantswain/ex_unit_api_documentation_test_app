@@ -20,4 +20,4 @@ import "deps/phoenix_html/web/static/js/phoenix_html"
 
 // import socket from "./socket"
 
-import "deps/ex_unit_api_documentation/web/static/js/docs"
+import "ex_unit_api_documentation/web/static/js/docs"
